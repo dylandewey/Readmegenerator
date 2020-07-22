@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/dylandewey/Readmegenerator/issues"
   },
-  "homepage": "https://github.com/dylandewey/Readmegenerator#readme"
+  "homepage": "https://github.com/dylandewey/Readmegenerator#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "inquirer": "^7.3.2"
+  }
 }

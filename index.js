@@ -14,11 +14,6 @@ inquirer
         },
         {
             type: 'input',
-            message: 'Table of Contents',
-            name: 'Table of Contents'
-        },
-        {
-            type: 'input',
             message: 'Any special instructions for installation',
             name: 'Installation'
         },
@@ -30,7 +25,7 @@ inquirer
         {
             type: 'list',
             message: 'What type of license would you like to have for this readme?',
-            name: 'License'
+            name: 'License',
             choices: [
                 'MIT',
                 'Drivers',
@@ -44,8 +39,7 @@ inquirer
         },
         {
             type: 'input',
-            message: ''
-        }
-
-
+            message: 'Do you have any questions?',
+            name: 'questions'
+        },
     ])
