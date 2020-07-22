@@ -43,3 +43,13 @@ inquirer
             name: 'questions'
         },
     ])
+
+    .then(function (data) {
+        let filename = data.title.toLowerCase().split(' ').join('') + '.json';
+        fs.writeFile(filename, JSON.stringify(data, null, '\t'), function (err) {
+
+            if (err) {
+                return console.log(err);
+            }
+        })
+    })
