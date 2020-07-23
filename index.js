@@ -1,7 +1,11 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-inquirer
-    .prompt([
+const util = require('util');
+
+const writeFileAsync = util.promisify(fs.writeFile);
+
+function prompt() {
+    return inquirer.prompt([
         {
             type: 'input',
             message: 'What is the title of this project?',
@@ -15,7 +19,7 @@ inquirer
         {
             type: 'input',
             message: 'Any special instructions for installation',
-            name: 'Installation'
+            name: 'installation'
         },
         {
             type: 'input',
@@ -23,33 +27,77 @@ inquirer
             name: 'usage'
         },
         {
-            type: 'list',
-            message: 'What type of license would you like to have for this readme?',
-            name: 'License',
-            choices: [
-                'MIT',
-                'Drivers',
-                'Pilots'
-            ]
+            type: "list",
+            name: "license",
+            message: "What kind of license should your project have?",
+            choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"]
         },
         {
             type: 'input',
             message: 'Who are the contributors to this project?',
-            name: 'Contributors'
+            name: 'contributors'
         },
         {
             type: 'input',
-            message: 'Do you have any questions?',
-            name: 'questions'
+            name: 'github',
+            message: 'What is your github username?'
         },
-    ])
+        {
+            type: 'input',
+            name: 'email',
+            message: 'What is your email?'
+        },
+        {
+            name: 'Questions'
+        },
+    ]);
+}
 
-    .then(function (data) {
-        let filename = data.title.toLowerCase().split(' ').join('') + '.json';
-        fs.writeFile(filename, JSON.stringify(data, null, '\t'), function (err) {
+function generateReadMe(answers) {
+    return `
+        ![GitHub license](https://img.shields.io/badge/license-${answers.license}-bluehttps://img.shields.io/badge/license-${answers.license}-bluehttps://img.shields.io/badge/license-${answers.license}-blue.)
+    # ${answers.title};
+    
+    ## Description:
+    ${answers.description};
+    
+    ## Table of Contents:
+    ### 1. [Installation](## Installation)
+    ### 2. [Usage](#Usage)
+    ### 3. [License](#License)
+    ### 4. [Contributors](#Contributors)
+    ### 5. [Tests](#Tests)
+    ### 6. [Questions](#Questions)
+    
+    ## Installation:
+    ${answers.installation}
+    
+    ## Usage:
+    ${answers.usage}
+    
+    ## License:
+    ${answers.license}
+    
+    ## Contributors:
+    ${answers.contributors}
+    
+    ## Test:
+    ${answers.tests}
+    
+    ## Questions:
+    For more informtion about this application please refer to my Github: [${answers.github}](https://github.com/${answers.github}Readmegenerator.git)
+    Or contact me by email: ${answers.email}`;
+}
 
-            if (err) {
-                return console.log(err);
-            }
-        })
+prompt()
+    .then(function (answers) {
+        let README = generateReadMe(answers);
+
+        return writeFileAsync('README.md', README)
     })
+    .then(function () {
+        console.log("Successfully wrote README");
+    })
+    .catch(function (err) {
+        console.log(err);
+    });
