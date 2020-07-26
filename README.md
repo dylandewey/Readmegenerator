@@ -1,11 +1,10 @@
 
-    ![License: Github License](https://img.shields.io/badge/License-MIT-brightgreen.svg)(https://github.com/dylandewey/Readmegenerator.git)
+[![License: Github License](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://github.com/dylandewey/Readmegenerator.git)
 
-
-# dd
+# d
     
 ## Description:
-    dd
+    d
     
 ## Table of Contents:
 ### 1. [Installation](#Installation)
@@ -16,7 +15,7 @@
 ### 6. [Questions](#Questions)
     
 ## Installation:
-    dd
+    d
     
 ## Usage:
     d
