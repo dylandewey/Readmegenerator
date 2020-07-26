@@ -61,7 +61,8 @@ function prompt() {
 
 function generateReadMe(answers) {
     return `
-    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+    [![License: Github License](https://img.shields.io/badge/License-${answers.license}-brightgreen.svg)](https://github.com/dylandewey/Readmegenerator.git)
+
 
 # ${answers.title}
     
@@ -69,7 +70,7 @@ function generateReadMe(answers) {
     ${answers.description}
     
 ## Table of Contents:
-### 1. [Installation](##Installation)
+### 1. [Installation](#Installation)
 ### 2. [Usage](#Usage)
 ### 3. [License](#License)
 ### 4. [Contributors](#Contributors)
