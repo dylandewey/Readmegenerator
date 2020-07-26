@@ -1,33 +1,33 @@
 
         ![GitHub license](https://img.shields.io/badge/license-MIT-bluehttps://img.shields.io/badge/license-MIT-bluehttps://img.shields.io/badge/license-MIT-blue.)
-    # Good readme generator;
+# Good REadme;
     
-    ## Description:
-    template for a good readme file;
+## Description:
+    good readme template;
     
-    ## Table of Contents:
-    ### 1. [Installation](## Installation)
-    ### 2. [Usage](#Usage)
-    ### 3. [License](#License)
-    ### 4. [Contributors](#Contributors)
-    ### 5. [Tests](#Tests)
-    ### 6. [Questions](#Questions)
+## Table of Contents:
+### 1. [Installation](#Installation)
+### 2. [Usage](#Usage)
+### 3. [License](#License)
+### 4. [Contributors](#Contributors)
+### 5. [Tests](#Tests)
+### 6. [Questions](#Questions)
     
-    ## Installation:
+## Installation:
     node
     
-    ## Usage:
+## Usage:
     node index.js
     
-    ## License:
+## License:
     MIT
     
-    ## Contributors:
+## Contributors:
     dylandewey
     
-    ## Test:
+## Test:
     undefined
     
-    ## Questions:
-    For more informtion about this application please refer to my Github: [dylandewey](https://github.com/dylandeweyReadmegenerator.git)
+## Questions:
+    For more informtion about this application please refer to my Github: [dylandewey](https://github.com/dylandewey/Readmegenerator.git)
     Or contact me by email: dylandewey41@gmail.com

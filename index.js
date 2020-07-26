@@ -39,6 +39,11 @@ function prompt() {
         },
         {
             type: 'input',
+            message: 'insert any screenshot links here.',
+            name: 'test'
+        },
+        {
+            type: 'input',
             name: 'github',
             message: 'What is your github username?'
         },
@@ -47,6 +52,7 @@ function prompt() {
             name: 'email',
             message: 'What is your email?'
         },
+
         {
             name: 'Questions'
         },
@@ -56,37 +62,37 @@ function prompt() {
 function generateReadMe(answers) {
     return `
         ![GitHub license](https://img.shields.io/badge/license-${answers.license}-bluehttps://img.shields.io/badge/license-${answers.license}-bluehttps://img.shields.io/badge/license-${answers.license}-blue.)
-    # ${answers.title};
+# ${answers.title}
     
-    ## Description:
-    ${answers.description};
+## Description:
+    ${answers.description}
     
-    ## Table of Contents:
-    ### 1. [Installation](## Installation)
-    ### 2. [Usage](#Usage)
-    ### 3. [License](#License)
-    ### 4. [Contributors](#Contributors)
-    ### 5. [Tests](#Tests)
-    ### 6. [Questions](#Questions)
+## Table of Contents:
+### 1. [Installation](##Installation)
+### 2. [Usage](#Usage)
+### 3. [License](#License)
+### 4. [Contributors](#Contributors)
+### 5. [Tests](#Tests)
+### 6. [Questions](#Questions)
     
-    ## Installation:
+## Installation:
     ${answers.installation}
     
-    ## Usage:
+## Usage:
     ${answers.usage}
     
-    ## License:
+## License:
     ${answers.license}
     
-    ## Contributors:
+## Contributors:
     ${answers.contributors}
     
-    ## Test:
+## Test:
     ${answers.tests}
     
-    ## Questions:
-    For more informtion about this application please refer to my Github: [${answers.github}](https://github.com/${answers.github}Readmegenerator.git)
-    Or contact me by email: ${answers.email}`;
+## Questions:
+    For more informtion about this application please refer to my Github: [${answers.github}](https://github.com/${answers.github}/Readmegenerator.git)
+    Or contact me by email: ${answers.email}`
 }
 
 prompt()
