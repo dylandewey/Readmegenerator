@@ -1,11 +1,12 @@
-function generateMarkdown(response) {
+function generateReadMe(answers) {
     return `
-    ![GitHub license](https://img.shields.io/badge/license-${answers.license}-bluehttps://img.shields.io/badge/license-${answers.license}-bluehttps://img.shields.io/badge/license-${answers.license}-blue.)
-# ${answers.title};
+[![License: Github License](https://img.shields.io/badge/License-${answers.license}-brightgreen.svg)](https://github.com/dylandewey/Readmegenerator.git)
 
+# ${answers.title}
+    
 ## Description:
-${answers.description};
-
+    ${answers.description}
+    
 ## Table of Contents:
 ### 1. [Installation](#Installation)
 ### 2. [Usage](#Usage)
@@ -13,24 +14,23 @@ ${answers.description};
 ### 4. [Contributors](#Contributors)
 ### 5. [Tests](#Tests)
 ### 6. [Questions](#Questions)
-
+    
 ## Installation:
-${answers.installation}
-
+    ${answers.installation}
+    
 ## Usage:
-${answers.usage}
-
+    ${answers.usage}
+    
 ## License:
-${answers.license}
-
+    ${answers.license}
+    
 ## Contributors:
-${answers.contributors}
-
+    ${answers.contributors}
+    
 ## Test:
-${answers.tests}
-
+    ${answers.tests}
+    
 ## Questions:
-For more informtion about this application please refer to my Github: [${answers.github}](https://github.com/${answers.github})
-Or contact me by email: ${answers.email}
-`
+    For more informtion about this application please refer to my Github: [${answers.github}](https://github.com/${answers.github}/Readmegenerator.git)
+    Or contact me by email: ${answers.email}`
 }
