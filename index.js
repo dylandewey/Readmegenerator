@@ -61,7 +61,8 @@ function prompt() {
 
 function generateReadMe(answers) {
     return `
-        ![GitHub license](https://img.shields.io/badge/license-${answers.license}-bluehttps://img.shields.io/badge/license-${answers.license}-bluehttps://img.shields.io/badge/license-${answers.license}-blue.)
+    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # ${answers.title}
     
 ## Description:
