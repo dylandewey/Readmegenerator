@@ -1,6 +1,8 @@
 
-    ![README](https://img.shields.io/badge/label-message-red)# 
-    dd
+    [![License: Github License](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://github.com/dylandewey/Readmegenerator.git)
+
+
+# dd
     
 ## Description:
     dd
