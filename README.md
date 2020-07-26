@@ -1,7 +1,7 @@
 
 [![License: Github License](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://github.com/dylandewey/Readmegenerator.git)
 
-# README Generator
+# Good README Generator
     
 ## Description:
     This application makes it easy to generate a good README file for your project.  It will ask you the questions in the terminal and as you fill in the answers it will put them in the correct place on the README file.  The file contains a table of contents and links to each section.  It also has a license at the top that links to the Github Repository for the project.  
