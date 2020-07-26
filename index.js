@@ -63,7 +63,6 @@ function generateReadMe(answers) {
     return `
     [![License: Github License](https://img.shields.io/badge/License-${answers.license}-brightgreen.svg)](https://github.com/dylandewey/Readmegenerator.git)
 
-
 # ${answers.title}
     
 ## Description:

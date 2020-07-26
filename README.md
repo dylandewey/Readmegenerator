@@ -1,5 +1,5 @@
 
-    [![License: Github License](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://github.com/dylandewey/Readmegenerator.git)
+    ![License: Github License](https://img.shields.io/badge/License-MIT-brightgreen.svg)(https://github.com/dylandewey/Readmegenerator.git)
 
 
 # dd
@@ -19,17 +19,17 @@
     dd
     
 ## Usage:
-    dd
+    d
     
 ## License:
     MIT
     
 ## Contributors:
-    dd
+    d
     
 ## Test:
     undefined
     
 ## Questions:
-    For more informtion about this application please refer to my Github: [dd](https://github.com/dd/Readmegenerator.git)
-    Or contact me by email: dd
+    For more informtion about this application please refer to my Github: [d](https://github.com/d/Readmegenerator.git)
+    Or contact me by email: d
