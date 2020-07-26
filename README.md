@@ -1,5 +1,5 @@
 
-[![License: Github License](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://github.com/dylandewey/Readmegenerator.git)
+[![License: Github License](https://img.shields.io/badge/License-GPL_3.0-brightgreen.svg)](https://github.com/dylandewey/Readmegenerator.git)
 
 # d
     
@@ -21,7 +21,7 @@
     d
     
 ## License:
-    MIT
+    GPL_3.0
     
 ## Contributors:
     d
