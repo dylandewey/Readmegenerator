@@ -27,7 +27,7 @@
     dylandewey
     
 ## Test:
-    <img alt="readmegenerator" src="readmegenerator.png" width="500">
+![README Generator](/readmegenerator.png "README Generator")
     
 ## Questions:
     For more informtion about this application please refer to my Github: [dylandewey](https://github.com/dylandewey/Readmegenerator.git)
